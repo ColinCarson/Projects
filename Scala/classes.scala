@@ -11,6 +11,9 @@ class Point(var x: Int, var y: Int){
 object Classes{
     def main(args: Array[String]){
         val pt = new Point(1,2)
+
+        pt.x = 12
+        
         println(pt)
         pt.move(10,10)
         println(pt)
