@@ -13,8 +13,15 @@ object StringThing extends App{
         }
     }
 
-    @throws(classOf[NumberFormatException])
-    def toInt(s: String) = s.toInt
+    def toInt(s: String):Option[Int] = {
+        try{
+            Some(s.toInt)
+        } catch {
+           case e: NumberFormatException => None
+        }
+    }
+
+
 
     println("HAL".increment)
     println("ABC".decrement)
