@@ -2,3 +2,5 @@
 Scala/.vscode/settings.json
 
 *.class
+node_modules/
+.gitignore
